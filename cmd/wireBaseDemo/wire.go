@@ -19,3 +19,9 @@ func NewWireSet(ctx context.Context) (wireBaseDemo.Baz, error) {
 	wire.Build(wireBaseDemo.WireSet)
 	return wireBaseDemo.Baz{}, nil
 }
+
+// 依赖 供给者集合的 注入方式 与 Value 结合
+func NewWireSet2(ctx context.Context) (wireBaseDemo.Baz, error) {
+	wire.Build(wireBaseDemo.WireSet2)
+	return wireBaseDemo.Baz{}, nil
+}

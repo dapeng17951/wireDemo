@@ -13,7 +13,7 @@ import (
 
 // Injectors from wire.go:
 
-// 注入
+// 直接依赖 供给者的 注入方式
 func NewWire(ctx context.Context) (wireBaseDemo.Baz, error) {
 	foo := wireBaseDemo.NewFoo()
 	bar := wireBaseDemo.NewBar(foo)
@@ -24,6 +24,7 @@ func NewWire(ctx context.Context) (wireBaseDemo.Baz, error) {
 	return baz, nil
 }
 
+// 依赖 供给者集合的 注入方式
 func NewWireSet(ctx context.Context) (wireBaseDemo.Baz, error) {
 	foo := wireBaseDemo.NewFoo()
 	bar := wireBaseDemo.NewBar(foo)
@@ -33,3 +34,17 @@ func NewWireSet(ctx context.Context) (wireBaseDemo.Baz, error) {
 	}
 	return baz, nil
 }
+
+func NewWireSet2(ctx context.Context) (wireBaseDemo.Baz, error) {
+	foo := _wireFooValue
+	bar := wireBaseDemo.NewBar(foo)
+	baz, err := wireBaseDemo.NewBaz(ctx, bar)
+	if err != nil {
+		return wireBaseDemo.Baz{}, err
+	}
+	return baz, nil
+}
+
+var (
+	_wireFooValue = wireBaseDemo.Foo{X: 2025}
+)
