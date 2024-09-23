@@ -2,7 +2,7 @@
  * @Description:
  * @Author: shangke
  * @Date: 2024-09-18 21:48:52
- * @LastEditTime: 2024-09-22 17:21:23
+ * @LastEditTime: 2024-09-23 20:04:46
  * @LastEditors: shangke
  */
 package main
@@ -23,7 +23,8 @@ func run(path string) error {
 		HandshakeConfig: kv.Handshake,
 		Plugins:         kv.PluginMap,
 		//Cmd:             exec.Command("sh", "-c", os.Getenv("KV_PLUGIN")), //调用 plugin 进程，这里使用环境变量执行的
-		Cmd: exec.Command(path + "\\" + "client.exe"),
+		//Cmd: exec.Command(path + "\\" + "client.exe"),
+		Cmd: exec.Command(path + "\\" + "plugin_csharp\\plugin_kv\\" + "kv_plugin.exe"),
 		AllowedProtocols: []plugin.Protocol{
 			plugin.ProtocolGRPC},
 	})
