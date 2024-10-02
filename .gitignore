@@ -85,3 +85,7 @@ plugins_csharp/libPlugin/obj/project.nuget.cache
 plugins_csharp/.vs/libPlugin/v17/DocumentLayout.json
 kv_1
 protos/kv_csharp/Kv.cs
+plugins_csharp/.vs/ProjectEvaluation/libplugin.metadata.v9.bin
+plugins_csharp/.vs/ProjectEvaluation/libplugin.projects.v9.bin
+plugins_csharp/.vs/ProjectEvaluation/libplugin.strings.v9.bin
+plugins_csharp/.vs/libPlugin/v17/.futdcache.v2
