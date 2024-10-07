@@ -109,3 +109,7 @@ csharp_workspace/Build_Test/.vs/Build_Test/v17/DocumentLayout.backup.json
 csharp_workspace/Build_Test/.vs/ProjectEvaluation/build_test.metadata.v9.bin
 csharp_workspace/Build_Test/.vs/ProjectEvaluation/build_test.projects.v9.bin
 csharp_workspace/Build_Test/.vs/ProjectEvaluation/build_test.strings.v9.bin
+cmd/gorm_test/db/s.db
+cmd/gorm_test/main.exe
+db/s.db
+s.db
