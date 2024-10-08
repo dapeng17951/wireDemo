@@ -113,3 +113,14 @@ cmd/gorm_test/db/s.db
 cmd/gorm_test/main.exe
 db/s.db
 s.db
+cmd/duckdb_cli/debug/server_linux-386
+cmd/duckdb_cli/debug/server_linux-amd64
+cmd/duckdb_cli/debug/server_linux-arm64
+cmd/duckdb_cli/debug/server_linux-loong64
+cmd/duckdb_cli/debug/server_linux-riscv64
+cmd/duckdb_cli/debug/server_windows-386.exe
+cmd/duckdb_cli/debug/server_windows-amd64.exe
+cmd/duckdb_cli/debug/server_windows-arm.exe
+cmd/duckdb_cli/debug/server_windows-arm64.exe
+foo
+foo.db
