@@ -1,0 +1,42 @@
+info:
+  contact: {}
+paths:
+  /ping:
+    get:
+      consumes:
+      - application/json
+      description: 输出json数据
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+        "400":
+          description: Bad Request
+        "404":
+          description: Not Found
+        "500":
+          description: Internal Server Error
+      summary: 测试
+      tags:
+      - ping
+  /ping2:
+    get:
+      consumes:
+      - application/json
+      description: 输出json数据
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+        "400":
+          description: Bad Request
+        "404":
+          description: Not Found
+        "500":
+          description: Internal Server Error
+      summary: 测试2-扫描其它package下的方法
+      tags:
+      - ping
+swagger: "2.0"
